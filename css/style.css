@@ -1,0 +1,406 @@
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    nav {
+        height: 60px;
+    }
+    
+    body {
+        background-color: #0e1012;
+    }
+    
+    .entete1 {
+        background-color: #120A46a4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .entete2 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0e1012a4;
+    }
+    
+    img {
+        width: 200px;
+    }
+    
+    .text-entete {
+        color: white;
+        border-left: 1px solid white;
+        padding: 15px;
+        font-family: Arial;
+    }
+    
+    .entete1:hover span {
+        margin-left: 10px;
+    }
+    
+    ul {
+        color: white;
+        position: relative;
+    }
+    
+    .menunav,
+    .copyright-reseau li {
+        display: inline-block;
+        margin: 0 20px;
+    }
+    
+    .menunav span {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .menuderoulant,
+    .span2 {
+        display: none;
+    }
+    
+    .menusnav :hover .menuderoulant {
+        display: block;
+        flex-direction: column;
+        position: absolute;
+        list-style: none;
+        background-color: rgb(39, 34, 34);
+        padding: 30px 30px 20px 30px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    
+    .menuderoulant li {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    .menusnav :hover .fleche {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -o-transform: rotate(180deg);
+        display: inline-block;
+    }
+    
+    .fleche {
+        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -ms-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+    }
+    
+    .menuderoulant :hover,
+    .menu ul :hover,
+    .copyright-reseau ul :hover {
+        color: #8a2be2;
+    }
+    
+    li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+    
+    span {
+        color: white;
+        margin-right: 10px;
+    }
+    
+    button {
+        margin: 0 25px 0 5px;
+        padding: 10px 13px;
+        border-radius: 15px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        background-color: #0071FC;
+        color: white;
+        border: #0e1012 0px;
+    }
+    
+    .bouton :hover,
+    .btn1 :hover {
+        background-color: #3e91f7;
+        transition-duration: 0.5s;
+    }
+    
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    
+    h1,
+    p {
+        color: white;
+    }
+    
+    .message-far {
+        width: 700px;
+        margin: auto;
+        margin-top: 80px;
+    }
+    
+    .message-far div {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .message-far h1 {
+        font-size: 80px;
+    }
+    
+    .message-far p {
+        font-size: 25px;
+        margin: 0px;
+        padding: 0px;
+        color: rgb(219, 159, 159);
+    }
+    
+    .message-far button {
+        font-size: larger;
+    }
+    
+    .menufoot li {
+        display: list-item;
+        list-style: none;
+    }
+    
+    .copyright-reseau {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .copyright-reseau img {
+        width: 20px;
+    }
+    
+    .menufoot {
+        display: flex;
+        width: 100%;
+    }
+    
+    .menufoot .image {
+        width: 30%;
+    }
+    
+    .menufoot .menu {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    footer section {
+        margin: 50px 0px;
+    }
+    
+    section div {
+        margin: 20px;
+    }
+    
+    .menu ul {
+        color: rgb(193, 166, 166);
+    }
+    
+    .menu li {
+        margin-top: 10px;
+    }
+    
+    section {
+        margin: 150px 30px;
+    }
+    
+    .menu p {
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+    
+    hr {
+        width: 20px;
+        border: 1px solid;
+        color: rgb(193, 166, 166);
+    }
+    
+    .copyright-reseau ul :hover img {
+        filter: invert(20%) sepia(98%) saturate(2882%) hue-rotate(265deg) brightness(89%) contrast(99%);
+        -webkit-filter: invert(20%) sepia(98%) saturate(2882%) hue-rotate(265deg) brightness(89%) contrast(99%);
+    }
+    
+    .partenaire img {
+        width: 100px;
+    }
+    
+    .partenaire {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .partenaire div {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+    
+    .secPartenaire {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .pPartenaire1,
+    .pPartenaire2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .pPartenaire2 :hover span {
+        margin-left: 10px;
+    }
+    
+    .pPartenaire2 p,
+    .pPartenaire2 span {
+        color: #8a2be2;
+    }
+    
+    .straightaway {
+        background-color: rgba(54, 38, 38, 0.568);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
+    
+    .beforeFooter,
+    .beforeFooter div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .beforeFooter .bfp2 {
+        flex-direction: row;
+    }
+    
+    button {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+    
+    .boutonNoire button {
+        border: 1px white solid;
+        background-color: #0e1012;
+    }
+    
+    .boutonNoire :hover {
+        color: #8a2be2;
+        background-color: #120A46a4;
+        transition-duration: 0.5s;
+    }
+    
+    .beforeFooter h2,
+    .atlas h2,
+    .data h2,
+    .vision h2 {
+        font-size: 50px;
+        color: white;
+        margin-bottom: 20px;
+    }
+    
+    .beforeFooter {
+        background-color: rgba(54, 38, 38, 0.568);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        height: 300px;
+    }
+    
+    .bfp1,
+    .bfp2 {
+        margin: 0px;
+    }
+    
+    .atlas,
+    .data,
+    .vision,
+    .straightaway {
+        display: flex;
+        align-items: center;
+    }
+    
+    .straightaway div {
+        width: 50%;
+        height: auto;
+        margin: 0px;
+    }
+    
+    .data .data1 {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    .data .data2 {
+        width: 50%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    .atlas .atlas1,
+    .vision .vision1 {
+        width: 55%;
+        height: auto;
+        margin: 10px;
+    }
+    
+    .atlas .atlas2,
+    .vision .vision2 {
+        width: 45%;
+        height: auto;
+        margin-left: 50px;
+    }
+    
+    .atlas div img,
+    .data div img,
+    .vision div img,
+    .straightaway div img {
+        width: 100%;
+    }
+    
+    .straightaway div .logoSt {
+        width: 300px;
+    }
+    
+    .atlas h2,
+    .atlas p,
+    .data h2,
+    .data p,
+    .vision h2,
+    .vision p {
+        margin-bottom: 20px;
+    }
+    
+    .atlas p,
+    .data p,
+    .vision p {
+        font-size: 20px;
+        font-weight: normal;
+        width: 500px;
+        line-height: 1.5em;
+        color: rgb(193, 166, 166);
+    }
