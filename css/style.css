@@ -116,7 +116,7 @@
     }
     
     button {
-        margin: 0 25px 0 5px;
+        margin: 0px 25px 0px 0px;
         padding: 10px 13px;
         border-radius: 15px;
         -webkit-border-radius: 20px;
@@ -217,7 +217,7 @@
     }
     
     section {
-        margin: 150px 30px;
+        margin: 130px 50px;
     }
     
     .menu p {
@@ -295,6 +295,11 @@
         flex-direction: row;
     }
     
+    .boutonNoire {
+        margin-left: 0px;
+        padding: 0px;
+    }
+    
     button {
         font-size: 18px;
         padding: 10px 25px;
@@ -314,7 +319,11 @@
     .beforeFooter h2,
     .atlas h2,
     .data h2,
-    .vision h2 {
+    .vision h2,
+    .search h2,
+    .mapStudio h2,
+    .maps h2,
+    .navigation h2 {
         font-size: 50px;
         color: white;
         margin-bottom: 20px;
@@ -338,38 +347,55 @@
     .atlas,
     .data,
     .vision,
-    .straightaway {
+    .straightaway,
+    .search,
+    .mapStudio,
+    .maps {
         display: flex;
         align-items: center;
     }
     
-    .straightaway div {
-        width: 50%;
-        height: auto;
-        margin: 0px;
-    }
-    
-    .data .data1 {
+    .data .data1,
+    .maps .maps1 {
         width: 50%;
         height: auto;
         margin: 10px;
     }
     
-    .data .data2 {
+    .data .data2,
+    .maps .maps2 {
         width: 50%;
         height: auto;
         margin: 10px;
     }
     
     .atlas .atlas1,
-    .vision .vision1 {
+    .vision .vision1,
+    .search .search1,
+    .mapStudio .mapStudio1 {
         width: 55%;
         height: auto;
         margin: 10px;
     }
     
+    .navigation {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .navigation .navigation2 {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .image2 {
+        margin-top: -90px;
+    }
+    
     .atlas .atlas2,
-    .vision .vision2 {
+    .vision .vision2,
+    .search .search2,
+    .mapStudio .mapStudio2 {
         width: 45%;
         height: auto;
         margin-left: 50px;
@@ -378,29 +404,97 @@
     .atlas div img,
     .data div img,
     .vision div img,
-    .straightaway div img {
-        width: 100%;
+    .straightaway div img,
+    .search div img,
+    .mapStudio div img {
+        width: 630px;
+    }
+    
+    .maps img {
+        width: 750px;
+    }
+    
+    .maps1 img {
+        margin-left: -200px;
+    }
+    
+    .image1 img {
+        width: 250px;
+    }
+    
+    .image2 img {
+        width: 900px;
+        height: 620px;
+    }
+    
+    .navigation1 {
+        margin-bottom: 50px;
+    }
+    
+    .navigation1 p {
+        display: flexbox;
+    }
+    
+    .navigation3 img {
+        width: 800px;
     }
     
     .straightaway div .logoSt {
         width: 300px;
     }
     
-    .atlas h2,
-    .atlas p,
-    .data h2,
-    .data p,
-    .vision h2,
-    .vision p {
-        margin-bottom: 20px;
-    }
-    
     .atlas p,
     .data p,
-    .vision p {
+    .vision p,
+    .search p,
+    .mapStudio p,
+    .maps p,
+    .navigation p {
         font-size: 20px;
         font-weight: normal;
         width: 500px;
         line-height: 1.5em;
         color: rgb(193, 166, 166);
+        margin-bottom: 20px;
+    }
+    
+    .straightaway .straightaway1 {
+        width: 45%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 60px;
+    }
+    
+    .straightaway .straightaway2 {
+        width: 55%;
+        height: auto;
+        margin: 0px;
+    }
+    
+    .straightaway1 .boutonNoire {
+        margin: 0px;
+    }
+    
+    .straightaway1 * {
+        margin-top: 30px;
+    }
+    
+    .spanStraigh {
+        color: white;
+        background-color: yellowgreen;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        padding: 5px 10px;
+        width: 140px;
+        font-size: 14px;
+    }
+    
+    .pStraigh {
+        width: 350px;
+        color: rgb(193, 166, 166);
+        font-size: 20px;
     }
