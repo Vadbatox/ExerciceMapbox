@@ -37,8 +37,22 @@
         font-family: Arial;
     }
     
-    .entete1:hover span {
+    .entete1:hover .fletch,
+    .boutonNoire :hover .fletch {
         margin-left: 10px;
+    }
+    
+    .fletch {
+        transition: all 0.4s;
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        -o-transition: all 0.4s;
+    }
+    
+    .entete1 div {
+        display: flex;
+        align-items: center;
     }
     
     ul {
@@ -55,6 +69,116 @@
     .menunav span {
         margin: 0px;
         padding: 0px;
+    }
+    
+    .prodMenus {
+        display: none;
+    }
+    
+    .menusnav :hover .prodMenus {
+        display: flex;
+        flex-direction: row;
+        width: 850px;
+        position: absolute;
+        background-color: rgb(39, 34, 34);
+        padding: 30px 30px 20px 30px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin-left: -100px;
+    }
+    
+    .type1 .spanImg :hover .spanImg img {
+        filter: invert(20%) sepia(98%) saturate(2882%) hue-rotate(265deg) brightness(89%) contrast(99%);
+        -webkit-filter: invert(20%) sepia(98%) saturate(2882%) hue-rotate(265deg) brightness(89%) contrast(99%);
+    }
+    
+    .prodMenus .prodMenu,
+    .prodMenus .prodMenu_suite {
+        width: 33%;
+        display: flexbox;
+        padding-right: 50px;
+    }
+    
+    .prodMenu_suite {
+        border: 1px solid #0d3a70;
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+    
+    .prodMenu img,
+    .prodMenu_suite img {
+        width: 17px;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .type1 {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+    
+    .type1 div {
+        margin-left: 15px;
+    }
+    
+    .type1 span {
+        display: flexbox;
+        background-color: #3e91f7;
+        font-weight: lighter;
+        padding: 2px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin-left: 2px;
+    }
+    
+    .prodMenu .spanImg,
+    .prodMenu_suite .spanImg {
+        width: 20px;
+        height: 17px;
+        background-color: rgb(83, 64, 64);
+        border-radius: 300px;
+        -webkit-border-radius: 300px;
+        -moz-border-radius: 300px;
+        -ms-border-radius: 300px;
+        -o-border-radius: 300px;
+        padding: 13px;
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .prodMenu_suite {
+        padding: 20px;
+    }
+    
+    .type1 h3 {
+        font-size: small;
+        color: rgb(193, 166, 166);
+    }
+    
+    .type1 div h3 {
+        color: white;
+        margin-bottom: 5px;
+        font-weight: bold;
+        font-size: 13px;
+    }
+    
+    .type1 p {
+        font-weight: lighter;
+        font-size: small;
+        color: rgb(193, 166, 166);
     }
     
     .menuderoulant,
@@ -96,6 +220,7 @@
         -moz-transition: all 0.2s ease-in-out;
         -ms-transition: all 0.2s ease-in-out;
         -o-transition: all 0.2s ease-in-out;
+        text-align: center;
     }
     
     .menuderoulant :hover,
@@ -310,7 +435,8 @@
         background-color: #0e1012;
     }
     
-    .boutonNoire :hover {
+    .boutonNoire :hover,
+    .boutonNoire :hover .fletch {
         color: #8a2be2;
         background-color: #120A46a4;
         transition-duration: 0.5s;
@@ -369,6 +495,14 @@
         margin: 10px;
     }
     
+    .maps {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding: 0px;
+        overflow: hidden;
+        overflow-y: visible;
+    }
+    
     .atlas .atlas1,
     .vision .vision1,
     .search .search1,
@@ -415,7 +549,13 @@
     }
     
     .maps1 img {
-        margin-left: -200px;
+        margin-left: -150px;
+    }
+    
+    .maps1 h2,
+    .maps1 p,
+    .maps1 .boutonNoire {
+        margin-left: 50px;
     }
     
     .image1 img {
